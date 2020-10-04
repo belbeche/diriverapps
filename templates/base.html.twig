@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        {% endblock %}
+    </head>
+    <body>
+        <div class="header">
+			<div class="header__row container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="logo">
+							<a href="index.html" class="logo__link">
+								<img src="images/logo.png" alt="Holydays Corbigny">
+							</a>
+						</div>
+					</div>
+					<div class="header__contact col-xs-2">
+						<div class="header__address">
+							<svg class="header__pin"><use xlink:href="images/icon.svg#icon_pin"></use></svg>HOLIDAYS</div>
+					</div>
+					<div class="header__contact col-xs-2">
+						<a href="tel:+908887775544" class="header__phone">
+							<svg class="header__phone-icon"><use xlink:href="images/icon.svg#icon_phone"></use></svg>03 86 20 19 84</a>
+					</div>
+					<div class="header__contact col-xs-4">
+						<a class="btn header__callback" href="">
+							<span class="btn__text">Conduite online</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="nav__btn-wrap d-lg-none d-xl-block">
+					<button class="btn nav__btn " type="button">
+						<span class="btn__text">
+							<span class="nav__icon"></span>
+						</span>
+					</button>
+				</div>
+				<div class="nav__body container">
+					<div class="nav__inner">
+						<div class="nav__close"></div>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link nav__link_has-sub nav__link_active">Accueil</a>
+							</li>
+							<li class="nav__item">
+								<a href="about.html" class="nav__link">permis</a>
+							</li>
+							<li class="nav__item">
+								<a href="feature.html" class="nav__link">documents</a>
+							</li>
+							<li class="nav__item">
+								<a href="price.html" class="nav__link">tarifs</a>
+							</li>
+							<li class="nav__item">
+								<a href="faq.html" class="nav__link">horaires</a>
+							</li>
+							<li class="nav__item">
+								<a href="review.html" class="nav__link">prépacode</a>
+							</li>
+							<li class="nav__item">
+								<a href="photo.html" class="nav__link">FAQ</a>
+							</li>
+							<li class="nav__item">
+								<a href="blog.html" class="nav__link nav__link_has-sub">actualités</a>
+							</li>
+							<li class="nav__item">
+								<a href="address.html" class="nav__link">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            {{ encore_entry_script_tags('formstyler') }}
+            {{ encore_entry_script_tags('countdown') }}
+            {{ encore_entry_script_tags('magnific-popup') }}
+            {{ encore_entry_script_tags('classycountdown') }}
+            {{ encore_entry_script_tags('swiper') }}
+            {{ encore_entry_script_tags('knob') }}
+            {{ encore_entry_script_tags('rome') }}
+            {{ encore_entry_script_tags('imagesloaded') }}
+            {{ encore_entry_script_tags('isotope') }}
+            {{ encore_entry_script_tags('scripts-js') }}
+        {% endblock %}
+    </body>
+</html>
+
+<script>
+    window.jQuery || document.write('<script src="assets/scripts/jquery-3.1.0.min.js"><\/script>');
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRrnhl1mCfuWpxL4Ame0cyS8fcV7xoyLk"></script>
+<script src="assets/scripts/jquery.formstyler.js"></script>
+<script src="assets/scripts/jquery.countdown.js"></script>
+<script src="assets/scripts/jquery.magnific-popup.min.js"></script>
+<script src="assets/scripts/swiper.min.js"></script>
+<script src="assets/scripts/jquery.knob.js"></script>
+<script src="assets/scripts/rome.min.js"></script>
+<script src="assets/scripts/imagesloaded.min.js"></script>
+<script src="assets/scripts/isotope.pkgd.min.js"></script>
+<script src="assets/scripts/app.js"></script>
